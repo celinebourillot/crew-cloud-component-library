@@ -1,0 +1,142 @@
+.navbar {
+  background: $primary;
+
+  .column {
+    padding: 0;
+  }
+
+  &__logo {
+    padding: 5px;
+    span {
+      font-size: 90px;
+      color: $white;
+    }
+  }
+
+  &__container {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+
+    @include mq($until: mobile) {
+      padding: 0 10px;
+    }
+  }
+
+  &__search {
+    padding: 5px 0 0 20px;
+
+    @include mq($until: mobile) {
+      padding: 0;
+    }
+  }
+
+  &__menu {
+    li {
+      display: inline;
+      padding-right: 10px;
+    }
+    a {
+      @include font-museo-sans($size: $baseline, $colour: $white, $weight: 100);
+    }
+
+    &__dropdown {
+      &:after {
+        font-family: "icomoon" !important;
+        content: "\e908";
+        color: $secondary;
+        font-size: 10px;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  &__account {
+    background: $secondary;
+    padding: 0;
+
+    .d-flex {
+      padding: 25px 20px 0;
+    }
+
+    span {
+      font-size: 40px;
+      padding-right: 10px;
+      color: $white;
+    }
+
+    p {
+      color: $white;
+    }
+  }
+}
+
+.navbar-burger {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: $primary;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  z-index: 100;
+
+  span {
+    background-color: $white;
+    display: block;
+    height: 2px;
+    left: calc(50% - 10px);
+    width: 20px;
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: $primary;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+
+  .close-btn {
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 5px;
+    border: 2px solid $white;
+    display: block;
+    background: transparent;
+    margin: 20px;
+  }
+
+  a {
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all 0.4 ease-in;
+    text-align: right;
+  }
+
+  a:hover {
+    color: $primary;
+  }
+}
+
+//LOGIN HEADER
+
+.login__logo {
+  text-align: center;
+  padding: 60px 0 30px;
+
+  span {
+    color: $primary;
+    font-size: 130px;
+
+    &:before {
+      display: inline-block;
+    }
+  }
+}

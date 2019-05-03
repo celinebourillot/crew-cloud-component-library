@@ -1,0 +1,48 @@
+.hero-slider {
+    border:1px solid $primary;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+
+    &__slide {
+        min-height: 400px;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+
+        &__content {
+            max-width: 40%;
+            padding:$baseline*4;
+
+            &__title {
+                @include font-museo-sans($size:$s1-text, $colour:$primary, $weight:100, $lh:$s1-lh)
+            }
+        }
+    }
+
+    &__nav {
+
+        .slick-list {
+            padding:0!important;
+        }
+
+        .slick-slide {
+            background: $primary;
+            color:$white;
+            padding:$baseline 0;
+            text-align: center;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                background: $secondary;
+            }
+        }
+
+        .slick-current {
+
+            background: $secondary;
+    
+        }
+ 
+    }
+
+}

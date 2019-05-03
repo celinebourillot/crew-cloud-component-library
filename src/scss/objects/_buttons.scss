@@ -1,0 +1,51 @@
+.btn {
+  transition: all 0.4s ease-in;
+  padding: 5px;
+  background: $secondary;
+  color:$white;
+  font-weight: bold;
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+
+  .btn__inside {
+    display: flex;
+  }
+
+  .btn__text {
+    padding: 8px 30px;
+    font-size: $baseline;
+  }
+
+  .btn__arrow {
+    background:$white;
+    width: 35px;
+    height:35px;
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+    align-items: flex-end;
+
+    &:before {
+      font-family: 'icomoon' !important;
+      content: "\e90a";
+      color: $secondary;
+      font-size: 25px;
+      position: absolute;
+      top: 5px;
+      left: -1px;
+      transition: 0.5s;
+    }
+  }
+  
+  &:hover {
+    background: $primary;
+    color: $white;
+    
+    .btn__arrow:before {
+      left: 5px;
+      color: $primary;
+    }
+  }
+}
+

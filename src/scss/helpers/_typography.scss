@@ -1,0 +1,53 @@
+$baseline: 16px;
+$font: 'museo-sans', sans-serif;
+
+
+//FONT SIZES
+$s1-text: 72px;
+$s2-text: 34px;
+$s3-text: 24px;
+$s4-text: 20px;
+$s5-text: $baseline;
+$s6-text: 15px;
+
+//LINE HEIGHTS
+$s1-lh: 68px;
+$s2-lh: 40px;
+$s3-lh: 30px;
+$s4-lh: 24px;
+$s5-lh: 18px;
+
+@mixin font-museo-sans($size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: $font;
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+h1 {
+    @include font-museo-sans($size:$s1-text, $colour:$primary, $weight:100, $lh:$s1-lh)
+  }
+
+h2 {
+  @include font-museo-sans($size:$s2-text, $colour:$primary, $weight:700, $lh:$s2-lh)
+}
+  
+h3 {
+
+  @include font-museo-sans($size:$s3-text, $colour:$primary, $weight:700, $lh:$s3-lh)
+}
+  
+h4 {
+
+  @include font-museo-sans($size:$s4-text, $colour:$primary, $weight:700, $lh:$s4-lh)
+
+}
+
+h5 {
+  @include font-museo-sans($size:$s6-text, $colour:$primary, $weight:700, $lh:$s5-lh)
+}
+
+p {
+  @include font-museo-sans($size:$s5-text, $colour:$primary, $weight:500, $lh:$s4-lh)
+}

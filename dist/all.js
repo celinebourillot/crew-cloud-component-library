@@ -1,0 +1,1 @@
+$(".hero-slider").slick({slidesToShow:1,slidesToScroll:1,arrows:!1,fade:!0,asNavFor:".hero-slider__nav"}),$(".hero-slider__nav").slick({slidesToShow:5,slidesToScroll:1,asNavFor:".hero-slider",dots:!1,centerMode:!1,focusOnSelect:!0,draggable:!1});

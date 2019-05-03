@@ -1,0 +1,19 @@
+.box {
+  background-color: $tertiary;
+  border-radius: 10px;
+  height: 100%;
+
+  &__title {
+    border-radius: 10px 10px 0 0;
+    color: $white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: $s3-text;
+
+    span {
+      font-size: 30px;
+      margin-right: 10px;
+    }
+  }
+}

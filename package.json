@@ -1,0 +1,35 @@
+{
+  "name": "crew-cloud-component-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celinebourillot/crew-cloud-component-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/celinebourillot/crew-cloud-component-library/issues"
+  },
+  "homepage": "https://github.com/celinebourillot/crew-cloud-component-library#readme",
+  "dependencies": {
+    "autoprefixer": "^9.5.0",
+    "cssnano": "^4.1.10",
+    "gulp": "4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "bulma": "^0.7.4"
+  }
+}
