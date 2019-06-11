@@ -1,3 +1,69 @@
-.footer {
+footer {
+    background: $primary;
+    padding: $baseline*4 $baseline*2;
 
+    h4, a, p {
+        color: $white;
+    }
+
+    a {
+        font-weight: 100;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    ul {
+
+        margin:0;
+        padding: 0 0 0 10px;
+
+        li {
+        padding: $baseline 0 0;
+    
+        &:before {
+          font-family: 'icomoon' !important;
+          content: '\e917';
+          font-size: 12px;
+          width: 15px;
+          height: 15px;
+          display: inline-block;
+          margin-left: -15px;
+          margin-right: 5px;
+          color: $secondary;
+        }
+      }
+    }
+
+    .icon {
+        color: $secondary;
+        font-size: 20px;
+        padding-right: 10px;
+    }
+
+    .footer-visual {
+        position: relative;
+
+        h4 {
+            padding: 0;
+        }
+
+        &__text {
+            position: absolute;
+            top:$baseline*2;
+            left: $baseline*2;
+            color: $white;
+
+            span {
+                font-size: $s2-text;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: $s6-text;
+                font-weight: 100;
+            }
+        }
+    }
 }

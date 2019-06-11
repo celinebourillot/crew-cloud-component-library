@@ -1,30 +1,30 @@
 {
-    "project_logo": null,
-    "project_favicon": "favicon.png",
-    "project_name": null,
+    "project_logo": "../src/images/logo.svg",
+    "project_favicon": "../src/images/logo.svg",
+    "project_name": "Crew Cloud",
     "project_url": null,
     "copyright_start_year": null,
     "client_name": null,
     "client_url": null,
     "creators": [
         {
-            "name": null,
-            "url": null
+            "name": "Cosmos",
+            "url": "https://cosmosdigital.co.uk"
         }
     ],
     "theme": {
         "border_color": "#E0E6ED",
-        "highlight_color": "#F9FAFC",
-        "brand_color": "#00585C",
+        "highlight_color": "#18c8cb",
+        "brand_color": "#383748",
         "background_color": "#FFFFFF",
         "code_highlight_theme": "github",
         "override_code_highlight_bg": "#F9FAFC",
-        "sample_dark_background": "#333333",
+        "sample_dark_background": "#eaeaf0",
         "show_project_name": true,
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "Pattern Library",
+            "library_title": "Crew Cloud Pattern Library",
             "pages_title": "Overview",
             "components_title": "Components"
         }
@@ -33,11 +33,13 @@
         "css": [
             "../dist/main.css"
         ],
-        "js": []
+        "js": [
+            "../dist/all.js"
+        ]
     },
     "font_libraries": {
-        "typekit_code": "rdt1ngq",
-        "typography_web_fonts": "museo-sans",
+        "typekit_code": null,
+        "typography_web_fonts": null,
         "google_web_fonts": null
     },
     "content": {
@@ -46,7 +48,7 @@
         "pages": [
             {
                 "name": "introduction",
-                "title": "Introduction",
+                "title": "Documentation",
                 "file": "./pages/intro.md"
             }
         ]
@@ -54,7 +56,7 @@
     "groups": [
         {
             "name": "typography",
-            "title": "Typogrphy",
+            "title": "Typography",
             "components": [
                 {
                     "group": "typography",
@@ -75,8 +77,263 @@
                 },
                 {
                     "group": "buttons",
+                    "name": "full-width",
+                    "title": "Full Width Button",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "buttons",
                     "name": "standard-link",
                     "title": "Standard Text Link",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "Forms",
+            "title": "Forms",
+            "components": [
+                {
+                    "group": "Forms",
+                    "name": "Inputs",
+                    "title": "Inputs",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "Forms",
+                    "name": "search",
+                    "title": "Search Box",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "Containers",
+            "title": "Containers",
+            "components": [
+                {
+                    "group": "Containers",
+                    "name": "default-box",
+                    "title": "Default Box",
+                    "width": "half"
+                },
+                {
+                    "group": "Containers",
+                    "name": "white-box",
+                    "title": "Box with border",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "Containers",
+                    "name": "tabs",
+                    "title": "Tabs"
+                }
+            ]
+        },
+        {
+            "name": "Cards",
+            "title": "Cards",
+            "components": [
+                {
+                    "group": "Cards",
+                    "name": "square-card",
+                    "title": "Square Cards",
+                    "width": "half"
+                },
+                {
+                    "group": "Cards",
+                    "name": "label-card",
+                    "title": "White Background Cards",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "Cards",
+                    "name": "news",
+                    "title": "News Card",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "Cards",
+                    "name": "events",
+                    "title": "Event Cards"
+                },
+                {
+                    "group": "Cards",
+                    "name": "question",
+                    "title": "Question Cards",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Commons",
+            "title": "Commons",
+            "components": [
+                {
+                    "group": "Commons",
+                    "name": "Header",
+                    "title": "Header"
+                },
+                {
+                    "group": "Commons",
+                    "name": "Footer",
+                    "title": "Footer"
+                }
+            ]
+        },
+        {
+            "name": "lists",
+            "title": "Lists",
+            "components": [
+                {
+                    "group": "lists",
+                    "name": "tick-icon",
+                    "title": "List with tick icon",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "lists",
+                    "name": "dots-arrow",
+                    "title": "Lists with dots or arrows",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "content",
+            "title": "Content Elements",
+            "components": [
+                {
+                    "group": "content",
+                    "name": "boxed-title",
+                    "title": "Boxed Title",
+                    "width": "half"
+                },
+                {
+                    "group": "content",
+                    "name": "usp",
+                    "title": "USP with Icon",
+                    "width": "half"
+                },
+                {
+                    "group": "content",
+                    "name": "progress-bar",
+                    "title": "Progress Bar",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "content",
+                    "name": "poll-result",
+                    "title": "Poll Results",
+                    "width": "half"
+                },
+                {
+                    "group": "content",
+                    "name": "module-card",
+                    "title": "Module Block",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "content",
+                    "name": "pagination",
+                    "title": "Pagination"
+                },
+                {
+                    "group": "content",
+                    "name": "accordion",
+                    "title": "Accordions",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Sliders",
+            "title": "Sliders",
+            "components": [
+                {
+                    "group": "Sliders",
+                    "name": "homepage",
+                    "title": "Homepage Slider"
+                },
+                {
+                    "group": "Sliders",
+                    "name": "product-slider",
+                    "title": "Product Slider"
+                },
+                {
+                    "group": "Sliders",
+                    "name": "offer-slider",
+                    "title": "Offer Slider",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "Sliders",
+                    "name": "events",
+                    "title": "Event Slider",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "Sliders",
+                    "name": "gallery",
+                    "title": "Image Gallery"
+                },
+                {
+                    "group": "Sliders",
+                    "name": "current-incentives",
+                    "title": "Current Incentives Slider",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "Sliders",
+                    "name": "expired-incentives",
+                    "title": "Expired incentives Slider"
+                },
+                {
+                    "group": "Sliders",
+                    "name": "tips-slider",
+                    "title": "Tips Slider",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true
+                    }
+                },
+                {
+                    "group": "Sliders",
+                    "name": "vertical",
+                    "title": "Vertical Slider",
                     "width": "half"
                 }
             ]

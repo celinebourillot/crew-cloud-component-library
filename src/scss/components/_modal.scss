@@ -1,0 +1,39 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(57,56,72,0.5);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-size: $s3-text;
+    display: none;
+
+    &__container {
+        background: $white;
+        padding: 10px;
+        position: absolute;
+        width: 50%;
+        top:50%;
+        margin-top: -100px;
+        left:25%;
+
+        @include mq($until: tablet) {
+            width: 80%;
+            left:10%;
+          }
+    }
+
+    &__border {
+        border: 1px solid $primary;
+        position: relative;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .btn--close {
+        top: -30px;
+        right: -30px;
+        position: absolute;
+    }
+}

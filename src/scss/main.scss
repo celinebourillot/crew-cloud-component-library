@@ -1,3 +1,10 @@
+/** BULMA */
+@import "node_modules/bulma/sass/utilities/_all.sass";
+@import "node_modules/bulma/sass/grid/columns.sass";
+@import "node_modules/bulma/sass/elements/container.sass";
+@import "node_modules/bulma/sass/layout/section.sass";
+@import "node_modules/bulma/sass/base/helpers.sass";
+
 // Helpers
 // ---------
 @import "helpers/mq";
@@ -13,7 +20,12 @@
 // Objects
 //
 @import "objects/buttons";
+@import "objects/labels";
 @import "objects/forms";
+@import "objects/progress-circle";
+@import "objects/lists";
+@import "objects/pagination";
+@import "objects/clouds";
 
 // Components
 // ---------
@@ -22,10 +34,9 @@
 @import "components/cards";
 @import "components/box";
 @import "components/sliders";
-
-/** BULMA */
-@import "node_modules/bulma/sass/utilities/_all.sass";
-@import "node_modules/bulma/sass/grid/columns.sass";
-@import "node_modules/bulma/sass/elements/container.sass";
-@import "node_modules/bulma/sass/layout/section.sass";
-@import "node_modules/bulma/sass/base/helpers.sass";
+@import "components/hero";
+@import "components/tabs";
+@import "components/breadcrumb";
+@import "components/modal";
+@import "components/accordions";
+@import "components/pagination";

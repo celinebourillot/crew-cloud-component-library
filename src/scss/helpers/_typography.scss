@@ -27,10 +27,19 @@ $s5-lh: 18px;
 
 h1 {
     @include font-museo-sans($size:$s1-text, $colour:$primary, $weight:100, $lh:$s1-lh)
+
+    @include mq($until: mobile) {
+      font-size: $s3-text;
+    }
   }
 
 h2 {
   @include font-museo-sans($size:$s2-text, $colour:$primary, $weight:700, $lh:$s2-lh)
+
+  @include mq($until: mobile) {
+    font-size: $s4-text;
+    line-height: $s4-lh;
+  }
 }
   
 h3 {
@@ -50,4 +59,26 @@ h5 {
 
 p {
   @include font-museo-sans($size:$s5-text, $colour:$primary, $weight:500, $lh:$s4-lh)
+}
+
+//HEADINGS 
+
+.title-with-link {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    padding:0;
+  }
+
+  @include mq($until: mobile) {
+    flex-wrap: wrap !important;
+
+    a {
+      padding-top: $baseline;
+    }
+  }
+
 }

@@ -1,0 +1,143 @@
+<div class="box">
+    <div class="box__title is-primary">
+        <h3>Current incentives</h3>
+    </div>
+
+    <div class="medium-padding">
+        <div class="one-slide">
+
+            <div class="one-slide__slide">
+                <div class="columns is-gapless">
+                    <div class="column is-5">
+                        <div class="small-padding">
+                            <div class="small-padding is-secondary rounded">
+                                <div class="border rounded normal-padding align-center">
+                                    OFFERS RUNS 01/07/2019 - 01/09/2019
+                                </div>
+                            </div>
+                            <img class="img-resp medium-padding-tb" src="../src/images/big-incentive.png"/>
+
+                            <a class="btn btn--white normal-margin-bottom">
+                            <div class="btn__inside">
+                                <span class="btn__text"><span class="icon icon-icon_f15b"></span> Download a copy</span>
+                                <span class="btn__arrow"></span>
+                            </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="column is-7">
+                        <div class="small-padding height-100 ">
+                            <div class="card">
+                                <div class="medium-padding">
+                                    <h2>Summer hot drinks incentive</h2>
+
+                                    <ul class="list">
+                                        <li>Understand their own emotions</li>
+                                        <li>Read customers accurately, so they may respond appropriately and effectively.</li>
+                                        <li>Make a connection with the customer</li>
+                                        <li>Integrate their own emotional intelligence with selling skills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="normal-padding-tb">
+                    <div class="separator"></div>
+                </div>
+            </div>
+
+            <div class="one-slide__slide">
+                <div class="columns is-gapless">
+                    <div class="column is-5">
+                        <div class="small-padding">
+                            <div class="small-padding is-secondary rounded">
+                                <div class="border rounded normal-padding align-center">
+                                    OFFERS RUNS 01/07/2019 - 01/09/2019
+                                </div>
+                            </div>
+                            <img class="img-resp medium-padding-tb" src="../src/images/incentive.png"/>
+
+                            <a class="btn btn--white">
+                            <div class="btn__inside">
+                                <span class="btn__text"><span class="icon icon-icon_f15b"></span> Download a copy</span>
+                                <span class="btn__arrow"></span>
+                            </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="column is-7">
+                        <div class="small-padding height-100">
+                            <div class="card">
+                                <div class="medium-padding">
+                                    <h2>Summer hot drinks incentive</h2>
+
+                                    <ul class="list">
+                                        <li>Understand their own emotions</li>
+                                        <li>Read customers accurately, so they may respond appropriately and effectively. sdfdfghhjkop[iuytrewuiouytrsaeiuuytreaw</li>
+                                        <li>Make a connection with the customer</li>
+                                        <li>Integrate their own emotional intelligence with selling skills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="normal-padding-tb">
+                    <div class="separator"></div>
+                </div>
+            </div>
+
+            <div class="one-slide__slide">
+                <div class="columns is-gapless">
+                    <div class="column is-5">
+                        <div class="small-padding">
+                            <div class="small-padding date is-secondary rounded">
+                                <div class="border rounded normal-padding align-center">
+                                    OFFERS RUNS 01/07/2019 - 01/09/2019
+                                </div>
+                            </div>
+                            <img class="img-resp medium-padding-tb" src="../src/images/incentive.png"/>
+
+                            <a class="btn btn--white">
+                            <div class="btn__inside">
+                                <span class="btn__text"><span class="icon icon-icon_f15b"></span> Download a copy</span>
+                                <span class="btn__arrow"></span>
+                            </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="column is-7">
+                        <div class="small-padding height-100">
+                            <div class="card">
+                                <div class="medium-padding">
+                                    <h2>Summer hot drinks incentive</h2>
+
+                                    <ul class="list">
+                                        <li>Understand their own emotions</li>
+                                        <li>Read customers accurately, so they may respond appropriately and effectively. sdfdfghhjkop[iuytrewuiouytrsaeiuuytreaw</li>
+                                        <li>Make a connection with the customer</li>
+                                        <li>Integrate their own emotional intelligence with selling skills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="normal-padding-tb">
+                    <div class="separator"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

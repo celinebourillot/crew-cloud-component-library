@@ -1,0 +1,63 @@
+.clouds-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @include mq($until: desktop) {
+        display: none;
+    }
+
+    .row {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .cloud {
+        position: absolute;
+
+        &--1 {
+            top: 10vh;
+            right: -150px;
+
+            img {
+            width: 300px;
+            }
+
+        }
+
+        &--2 {
+            top: 5vh;
+            left: 50px;
+
+            img {
+                width: 400px;
+                }
+        }
+
+        &--3 {
+            bottom: 20vh;
+            right: 50px;
+
+            img {
+                width: 350px;
+                }
+        }
+
+        &--4 {
+            bottom: 0vh;
+            left: -80px;
+
+            img {
+                width: 150px;
+                }
+        }
+    }
+}

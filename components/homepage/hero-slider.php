@@ -1,5 +1,6 @@
 <div class="hero-slider">
     <div class="hero-slider__slide" style="background-image:url('../src/images/header.png')">
+        <div class="is-overlay is-overlay--mobile is-overlay--light"></div>
         <div class="hero-slider__slide__content">
             <div class="hero-slider__slide__content__title">
                 The new<br/>

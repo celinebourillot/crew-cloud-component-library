@@ -1,25 +1,42 @@
 <?php
 
-include '../components/header.php';
-include '../components/navbar.php';
+include '../components/generic/header.php';
+include '../components/generic/navbar.php';
 
 ?>
 
 <main>
     <section class="container">
 
-    <?php
+        <div class="normal-padding">
+            <?php
+                include '../components/homepage/hero-slider.php'; 
+            ?>
+        </div>
 
-    include '../components/hero-slider.php';
+        <div class="normal-padding">
+            <?php
+                include '../components/homepage/related-pages.php'; 
+            ?>
+        </div>
 
-    ?>
+        <div class="normal-padding">
+            <?php
+                include '../components/homepage/cta-blocks.php'; 
+            ?>
+        </div>
+
+        <div class="normal-padding">
+            <?php
+                include '../components/homepage/homepage-content-blocks.php'; 
+            ?>
+        </div>
         
-
     </section>
 </main>
 
 <?php
 
-include '../components/footer.php';
+include '../components/generic/footer.php';
 
 ?>

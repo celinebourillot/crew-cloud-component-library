@@ -1,24 +1,124 @@
+//GENERAL 
+
+.slick, .slick-wrapper {
+    width: 100%;
+  }
+
+.slick-dots {
+
+    li {
+        button {
+            background: $tertiary;
+            border-radius: 100px;
+
+            &:before {
+                opacity:0;
+                font-size:10px;
+                top:1px;
+            }
+
+            &:hover {
+
+                &:before {
+                    color: $secondary;
+                }
+
+            }
+        }
+    }
+
+    li.slick-active {
+
+        button {
+            background: $primary;
+
+            &:before {
+                color: $secondary;
+                opacity: 1;
+            }
+        }
+
+    }
+}
+
+.arrow {
+    width:40px;
+    height:40px;
+    background: $secondary;
+    color:$white;
+    position: absolute;
+    top:50%;
+    margin-top:-20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    z-index: 2;
+    cursor: pointer;
+
+    &--prev {
+        left:0;
+        margin-left: -15px;
+    }
+
+    &--next {
+        right:0;
+        margin-right: -15px;
+    }
+}
+//HERO SLIDER
+
 .hero-slider {
     border:1px solid $primary;
     border-bottom: none;
     border-radius: 10px 10px 0 0;
+
+    @include mq($until: mobile) {
+        border-bottom: 1px solid $primary;
+        border-radius: 10px;
+    }
 
     &__slide {
         min-height: 400px;
         background-size: cover;
         border-radius: 10px 10px 0 0;
 
+        @include mq($until: mobile) {
+            background-position: bottom right;
+            border-radius: 10px;
+          }
+
         &__content {
-            max-width: 40%;
+            max-width: 50%;
             padding:$baseline*4;
+            position: relative;
+            z-index: 2;
+
+            @include mq($from: tablet, $until:desktop) {
+                max-width: 70%;
+              }
+
+            @include mq($until: tablet) {
+                max-width: 100%;
+                padding:$baseline*2;
+              }
 
             &__title {
                 @include font-museo-sans($size:$s1-text, $colour:$primary, $weight:100, $lh:$s1-lh)
+
+                @include mq($until: mobile) {
+                    font-size: $s2-text;
+                    line-height: $s2-lh;
+                  }
             }
         }
     }
 
     &__nav {
+
+        @include mq($until: mobile) {
+            display: none;
+          }
 
         .slick-list {
             padding:0!important;
@@ -46,3 +146,144 @@
     }
 
 }
+
+//PRODUCT SLIDER
+
+.product-slider, .offer-slider, .tip-slider {
+
+    .slick-list {
+        padding-bottom:$baseline;
+    }
+
+    .slick-track{
+        display: flex;
+    
+        .slick-slide{
+            display: flex;
+            height: auto;
+    
+            .box, .box--border {
+                height: 100%;
+                max-height: 100%;
+
+                @include mq($until: mobile) {
+                    border: none;
+                    border-radius: 0;
+                    border-bottom: 1px solid $primary;
+                  }
+            }
+        }
+    }
+}
+
+
+.offer-slider, .tip-slider, .one-slide, .slider-dark-bg {
+
+    li {
+        button {
+            background: $white;
+        }
+    }
+
+    @include mq($until: mobile) {
+        .small-padding {
+            padding: 0;
+        }
+      }
+
+
+}
+
+.tip-slider {
+    @include mq($until: tablet) {
+        text-align: center;
+      }
+}
+
+.three-slides, .five-slides {
+
+    margin-bottom: 80px !important;
+
+    .slick-dots {
+        border-top: 1px solid $primary;
+        padding-top: $baseline*2;
+        bottom: -80px;
+    }
+
+    .date {
+        text-transform: uppercase;
+        font-size: $s2-text;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+
+        .icon {
+            color: $secondary;
+            font-size: 50px;
+        }
+    }
+
+    .d-flex {
+        justify-content: space-between;
+        padding: $baseline/2 0;
+    }
+}
+
+.slider-dark-bg {
+    .slick-dots {
+        border-top: 1px solid $white;
+    }
+}
+
+.five-slides {
+
+    @include mq($until: mobile) {
+        margin-bottom: 0 !important;
+      }
+
+    .slick-dots {
+        border-top: 1px solid $tertiary;
+    }
+}
+
+//make slider fit correctly in a flexbox cotnainer
+
+.box-with-slider {
+    width: 50%;
+
+    @include mq($until: mobile) {
+        width: 100%;
+      }
+}
+
+//IE hack for offers slider 
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .offer{
+
+        .card {
+            height: auto;
+        }
+        .columns {
+            display: block;
+            width: 100%;
+            clear: both;
+            overflow: auto;
+
+            .left {
+                width: 40%;
+                float: left;
+                flex: none;
+            }
+
+            .right {
+                width: 60%;
+                float: right;
+                flex: none;
+            }
+        }
+    }
+ }
+
+
+

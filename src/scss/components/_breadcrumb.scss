@@ -1,0 +1,35 @@
+.breadcrumb {
+    font-weight: 100;
+
+    ul {
+        margin:0;
+        padding:0;
+    }
+
+    li {
+        padding:0;
+        display: inline;
+
+        &:after {
+            font-family: 'icomoon' !important;
+            content: '\e917';
+            font-size: 12px;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: 5px;
+            margin-left: 0;
+            color: $secondary;
+          }
+        
+          &:last-of-type:after {
+              content:'';
+          }
+    }
+
+    a {
+        color:$primary;
+        font-weight: 100;
+        padding-right:10px;
+    }
+}

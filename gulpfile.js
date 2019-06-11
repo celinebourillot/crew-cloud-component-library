@@ -44,7 +44,7 @@ function jsTask(){
 // Cachebust
 var cbString = new Date().getTime();
 function cacheBustTask(){
-    return src(['index.html'])
+    return src(['components/header.php'])
         .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
         .pipe(dest('.'));
 }

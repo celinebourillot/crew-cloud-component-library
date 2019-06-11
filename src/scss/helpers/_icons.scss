@@ -23,7 +23,52 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  .icon--default {
+    font-size: 30px;
+  }
+
+  .usp {
+    @include mq($until: mobile) {
+      text-align: center;
+    }
+  }
+
+  .usp-icon {
+    background: $secondary;
+    color: $white;
+    font-size: 40px;
+    padding:10px;
+    border-radius: 100px;
+  }
   
+  .icon-icon_f178-down-1:before {
+    content: "\e910";
+  }
+  .icon-original_logo:before {
+    content: "\e919";
+  }
+  .icon-instagram:before {
+    content: "\e912";
+  }
+  .icon-linkedin:before {
+    content: "\e913";
+  }
+  .icon-twitter:before {
+    content: "\e914";
+  }
+  .icon-facebook:before {
+    content: "\e915";
+  }
+  .icon-icon_f107-left:before {
+    content: "\e916";
+  }
+  .icon-icon_f107-right:before {
+    content: "\e917";
+  }
+  .icon-icon_f107-up:before {
+    content: "\e918";
+  }
   .icon-icon_f00c:before {
     content: "\e900";
   }
@@ -71,9 +116,6 @@
   }
   .icon-icon_f663:before {
     content: "\e90f";
-  }
-  .icon-logo_new:before {
-    content: "\e910";
   }
   .icon-Star:before {
     content: "\e911";

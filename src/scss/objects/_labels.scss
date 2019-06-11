@@ -1,0 +1,44 @@
+.round-label {
+    padding:5px;
+    border-radius: 1000px;
+    background: $secondary;
+    color: $white;
+    font-weight: 500;
+    display:block;
+    text-align: center;
+    position: absolute;
+    top:$baseline;
+    left:$baseline;
+    text-transform: uppercase;
+
+    &--small-text {
+        font-size: 10px;
+    }
+
+    span {
+        border: 1px solid $white;
+        border-radius: 100px;
+        width:60px;
+        height:60px;
+        display: block;    
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+    }
+
+    &--large {
+        font-size: $s3-text;
+        top:$baseline*2;
+        left:$baseline*2;
+
+        @include mq($until: mobile) {
+            top:$baseline;
+            left:$baseline;
+          }
+
+        span {
+            width:100px;
+            height:100px;
+        }
+    }
+}

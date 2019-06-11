@@ -1,0 +1,55 @@
+<div class="card card--news normal-margin-bottom">
+    <div class="normal-padding">
+        <div class="columns">
+            <div class="column is-narrow">
+                <img class="img-resp" src="../src/images/notice_1.png" />
+            </div>
+
+            <div class="column">
+                <h3>Eau de parfum or Eau de toilette ? what's the difference ?</h3>
+                <span class="normal-margin-bottom">Posted by <strong>IFR Team</strong>
+                <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="separator separator--gray"></div>
+    <div class="normal-padding">
+
+        <div class="d-flex align-items justify-sides">
+            <p>Wed 26th jul 17, 6:31pm</p>
+            <a href="" class="small-link">Read more</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="card card--news">
+    <div class="normal-padding">
+        <div class="columns">
+            <div class="column is-narrow">
+                <img class="img-resp" src="../src/images/notice_1.png" />
+            </div>
+
+            <div class="column">
+                <h3>Eau de parfum or Eau de toilette ? what's the difference ?</h3>
+                <span class="normal-margin-bottom">Posted by <strong>IFR Team</strong>
+                <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="separator separator--gray"></div>
+    <div class="normal-padding">
+
+        <div class="d-flex align-items justify-sides">
+            <p>Wed 26th jul 17, 6:31pm</p>
+            <a href="" class="small-link">Read more</a>
+        </div>
+
+    </div>
+</div>

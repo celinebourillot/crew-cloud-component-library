@@ -1,6 +1,142 @@
 .card {
   border-radius: 10px;
   box-shadow: none;
-  padding:$baseline*2;
   height: 100%;
+  width: 100%;
+  background: $white;
+  position: relative;
+
+  .columns {
+    align-items: center;
+  }
+
+  p {
+    padding:0;
+  }
+}
+
+.square-card {
+
+  img {
+    width: 100%;
+  }
+  
+  &__title {
+    color: $white;
+    padding: $baseline;
+    background: $primary;
+    text-align: center;
+  }
+}
+
+.product-card {
+
+  height: 100%;
+
+  img {
+    width: 100%;
+  }
+
+  &__ratings {
+    padding: $baseline 0;
+    font-size: $s6-text;
+    font-weight: 700;
+
+    span {
+      font-size: 18px;
+    }
+
+    .filled {
+      color: $secondary;
+    }
+  }
+
+  &__price {
+    span {
+      color: $secondary;
+      font-size: $s3-text;
+      display: block;
+      font-weight: 700;
+    }
+  }
+}
+
+.card--forum-question {
+  .forum-icon {
+
+    border: 4px solid $tertiary;
+    margin-right: 20px;
+    .icon {
+      font-size: 40px;
+      padding: 0;
+    }
+  }
+}
+
+.card--event {
+  border: 1px solid $primary;
+
+  img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .date--square {
+    background: $secondary;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: $baseline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px 0 0 0;
+    font-weight: 100;
+    font-size: $s4-text;
+
+    span {
+      width: 100%;
+      font-weight: 700;
+      font-size: $s2-text;
+      display: block;
+    }
+  }
+
+  &--small {
+    border-radius: 0;
+
+    .date--container {
+      width: 8rem;
+      background: $secondary;
+      height: 8rem;
+
+      @include mq($until: mobile) {
+        width: 100%;
+      }
+    }
+
+    .date--square {
+      height: 100%;
+      border-radius: 0;
+      position: relative;
+      padding:0;
+
+      span {
+        padding-top: $baseline*2;
+      }
+    }
+
+    .small-link {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+
+      @include mq($until: mobile) {
+        width: 100%;
+        display: block;
+        position: static;
+        padding: $baseline;
+      }
+    }
+  }
 }

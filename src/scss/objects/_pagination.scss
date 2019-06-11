@@ -1,0 +1,25 @@
+.pagination {
+
+    &__numbers {
+
+        li{
+            list-style-type: none;
+            display: inline;
+            padding: 5px 10px;
+        }
+
+        .selected {
+            background: $secondary;
+            border-radius: 20px;
+            color: $white;
+        }
+    }
+
+    .btn {
+        min-width: 0;
+
+        .icon {
+            font-size: 12px;
+        }
+    }
+}

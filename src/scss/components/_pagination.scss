@@ -1,0 +1,13 @@
+.pagination {
+    @include mq($until: mobile) {
+        .d-flex {
+            flex-wrap: wrap;
+        }
+
+        ul, a {
+            margin-top: $baseline;
+            display: block;
+            width: 100%;
+        }
+      }
+}

@@ -22,6 +22,13 @@
                 }
             });
         </script>
+
+         <!-- Fonts -->
+         <link href="https://use.typekit.net/rdt1ngq.css" rel="stylesheet"> 
+        
+         <!-- CSS File -->
+         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
         <style>
             /* Targeted theme styles */
             .ndpl-folding-cube .ndpl-cube:before { background-color: {{ theme.brand_color }} !important; }
@@ -40,6 +47,10 @@
             .ndpl-c-brand-a:hover                { color: {{ theme.brand_color }} !important; }
             .ndpl-c-brand-ca a:hover             { color: {{ theme.brand_color }} !important; }
             .ndpl-c-brand-cai a                  { color: {{ theme.brand_color }} !important; }
+            .ndpl-page, .ndpl-library {
+                z-index: 100 !important;
+                position: relative !important;
+            }
         </style>
         <link rel="stylesheet" v-if="theme.code_highlight_theme" :href="'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/' + theme.code_highlight_theme + '.min.css'">
         <style v-if="theme.override_code_highlight_bg">.hljs { background: {{ theme.override_code_highlight_bg }}} !important; }</style>
@@ -291,6 +302,11 @@
         </div>
     </div>
 
+    <script
+  src="//code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+
     <ndpl-script v-for="script in assets.js"
                  :script="script"
                  v-if="loaded"
@@ -298,11 +314,12 @@
         <script :src="script"></script>
     </ndpl-script>
 
+    </body>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.25/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.8.0/vue-resource.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.0/js/smooth-scroll.min.js"></script>
     <script src="app/js/main.min.js"></script>
-    </body>
 </html>

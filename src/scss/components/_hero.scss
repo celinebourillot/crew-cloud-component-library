@@ -1,0 +1,35 @@
+.hero {
+    border:1px solid $primary;
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+
+    @include mq($until: mobile) {
+        background-position: bottom right;
+      }
+
+    &__content {
+        max-width: 40%;
+        padding:$baseline*4;
+        position: relative;
+        z-index: 2;
+
+        @include mq($from: tablet, $until:desktop) {
+          max-width: 70%;
+        }
+
+        @include mq($until: tablet) {
+          max-width: 100%;
+          padding:$baseline*2;
+        }
+
+        &__title {
+            @include font-museo-sans($size:$s1-text, $colour:$primary, $weight:100, $lh:$s1-lh)
+
+            @include mq($until: mobile) {
+                font-size: $s2-text;
+                line-height: $s2-lh;
+              }
+        }
+    }
+}

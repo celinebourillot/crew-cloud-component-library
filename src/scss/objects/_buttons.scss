@@ -10,6 +10,8 @@
 
   .btn__inside {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .btn__text {
@@ -19,7 +21,7 @@
 
   .btn__arrow {
     background:$white;
-    width: 35px;
+    min-width: 35px;
     height:35px;
     display: inline-block;
     border-radius: 50px;
@@ -36,6 +38,47 @@
       left: -1px;
       transition: 0.5s;
     }
+
+    &__down {
+      &:before {
+        content: "\e910";
+        top: -1px;
+        left: 5px;
+      }
+    }
+
+  }
+
+  &--white {
+    background:$white;
+    color: $primary;
+    margin-bottom: $baseline;
+    display: block;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .icon {
+      font-size: 30px;
+      color: $secondary;
+    }
+
+    .btn__text {
+      font-size: $s6-text;
+      font-weight: 100;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .btn__arrow {
+      background:$secondary;
+  
+      &:before {
+        color: $white;
+      }
+    }
   }
   
   &:hover {
@@ -46,6 +89,58 @@
       left: 5px;
       color: $primary;
     }
+
+    .btn__arrow__down:before {
+      top: 5px;
+    }
   }
+
+  &--basic {
+    padding: 10px;
+    min-width: 200px;
+    text-align: center;
+  }
+
+  &--disabled {
+    background: $tertiary;
+    cursor: default;
+
+    &:hover {
+      background: $tertiary;
+    }
+  }
+
+  &--plus {
+    background: $primary;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0px 6px 2px;
+    margin-left:10px;
+    display: inline-block;
+
+    &:hover {
+      background: $secondary;
+    }
+  }
+
+  &--close {
+    font-weight: 100;
+    padding: 10px 18px;
+  }
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+//LINKS 
+
+.small-link {
+  font-size: $s6-text;
+  font-weight: 500;
+  display: block;
 }
 

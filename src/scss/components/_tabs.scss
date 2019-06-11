@@ -1,0 +1,60 @@
+.tabs-container {
+
+    background: $white;
+
+    .title-with-link {
+        padding-bottom: 0;
+
+        @include mq($until: mobile) {
+            flex-wrap: wrap-reverse;
+
+            .small-link {
+                padding: $baseline;
+            }
+          }
+    }
+
+    
+}
+.tabs {
+    padding: 0;
+    margin-bottom: -1px;
+
+    li {
+        background: $primary;
+        text-align: center;
+        display: inline-block;
+        list-style-type: none;
+
+        @include mq($until: mobile) {
+            width: 100%;
+          }
+      
+        a {
+            color: $white;
+            background: $primary;
+            padding: $baseline;
+            min-width: 200px;
+            display: inline-block;
+
+            @include mq($until: mobile) {
+                width: 100%;
+              }
+        }
+
+        .active {
+            background: $secondary;
+        }
+    }
+
+}
+
+.tab-container {
+    border:1px solid $primary;
+    border-radius: 0 10px 10px 10px;
+
+    @include mq($until: mobile) {
+        border-radius: 0 0 10px 10px;
+        padding: 0 0 $baseline 0;
+      }
+}

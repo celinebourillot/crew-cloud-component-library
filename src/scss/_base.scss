@@ -1,17 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
 body {
   font-family: $font;
   font-size: $baseline;
   color: $primary;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
 
-  @include mq($until: mobile) {
-    padding: 0 $baseline;
-  }
+p {
+  word-break: break-word;
+}
+
+.body-lock {
+  height: 100vh;
+  overflow: hidden;
 }
 
 main {
   padding: $baseline*2 0;
+
+  @include mq($until: mobile) {
+    padding: $baseline;
+  }
 }
 
 p,
@@ -28,9 +48,10 @@ a {
   @include font-museo-sans(
       $size: $baseline,
       $colour: $secondary,
-      $weight: 700
+      $weight: 700,
     )
     text-decoration: none;
+    transition: 0.4s;
   &:hover {
     color: $primary;
   }
